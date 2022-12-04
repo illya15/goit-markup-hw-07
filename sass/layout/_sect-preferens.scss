@@ -1,36 +1,5 @@
  /* переваги */
 
- .preference .items::before{
-    display: block;
-    content:"";
-   
-    height: 120px;
-    /* outline: 1px solid red; */
-    background: #F5F4FA;
-border-radius: 4px;
-background-size:none;
-background-repeat: no-repeat;
-background-position: center;
-margin-bottom: 30px;
-
-}
-
-
-.preference .items:nth-child(4)::before{
-    background-image: url(../imges/icons.svg/astronaut\ 4\ \(1\).svg);
-
-}
-.preference .items:nth-child(3)::before{
-    background-image: url(../imges/icons.svg/Vector3\ \(1\).svg);
-}
-
-.preference .items:nth-child(2)::before{
-    background-image: url(../imges/icons.svg/clock\ 2\ \(1\).svg);
-}
-
-.preference .items:nth-child(1)::before{
-    background-image: url(../imges/icons.svg/antenna\ 1\ \(1\).svg);
-}
 
 
 
@@ -49,14 +18,14 @@ margin-bottom: 30px;
     
     .preference  {
         display: flex;
-    }
     
-        .preference .preference__items +.preference__items{
+    
+        & .preference__items +.preference__items{
             margin-left: 30px;
              /* background-color: tomato;  */
            }
     
-        .preference .title {
+        & .title {
         margin-top: 0px;
         margin-bottom: 10px;
     font-weight: 700;
@@ -66,7 +35,7 @@ margin-bottom: 30px;
     color: $title-tekst-color ;   
      }
     
-    .preference .preference__text {
+    & .preference__text {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 14px;
@@ -74,3 +43,38 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     color: $primery-text-color;   
      }
+    
+
+     & .preference__items::before{
+        display: block;
+        content:"";
+       
+        height: 120px;
+        /* outline: 1px solid red; */
+        background: #F5F4FA;
+    border-radius: 4px;
+    background-size:none;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    
+    }
+    
+    
+    & .preference__items:nth-child(4)::before{
+        background-image: url(../imges/icons.svg/astronaut\ 4\ \(1\).svg);
+    
+    }
+    & .preference__items:nth-child(3)::before{
+        background-image: url(../imges/icons.svg/Vector3\ \(1\).svg);
+    }
+    
+    & .preference__items:nth-child(2)::before{
+        background-image: url(../imges/icons.svg/clock\ 2\ \(1\).svg);
+    }
+    
+    & .preference__items:nth-child(1)::before{
+        background-image: url(../imges/icons.svg/antenna\ 1\ \(1\).svg);
+    }
+}
+    

@@ -3,8 +3,8 @@
     display: flex;
    justify-items: center;
    align-items: center;
-}
- .clients .client-item {
+
+ & .client-item {
     width: 170px;
     height: 92px;
     background-color:#F5F5F5;
@@ -12,8 +12,9 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
- .clients .client-item:last-child{
+ & .client-item:last-child{
     margin-right: 0px;
+}
 }
 .client-item .client-link{
     width: 100%;

@@ -2,25 +2,21 @@
 
 .members{
     display: flex;
-}
+
     
- .members .item{
+ & .item{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     border-radius: 0px 0px 4px 4px; 
     border: 1px solid #EEEEEE;
  }
 
- .members .item + .item{
+ & .item + .item{
     margin-left: 30px;
    }
 
-.section-members{
-padding-top: 94px;
-padding-bottom: 94px;
-background-color: #F5F4FA;
 
-}
-.members .title {
+
+& .title {
 margin-top: 30px;
 margin-bottom: 10px;
 font-weight: 500;
@@ -31,7 +27,7 @@ letter-spacing: 0.03em;
 color: $title-tekst-color;
     }
     
-.members .profetion-text{
+& .profetion-text{
  margin-top: 0px;
  margin-bottom: 30px;
 font-size: 16px;
@@ -42,14 +38,14 @@ color: $primery-text-color;
 border-bottom: 2px solid  #F5F4FA;;
     }
 
-   .members .s {
+   & .s {
     display: flex;
 justify-content: center;
 align-items: center;
 
     }
 
-.members .item-member {
+& .item-member {
 
     width: 44px;
     height: 44px;
@@ -60,15 +56,15 @@ align-items: center;
 
 }
 
-.members .item-member:last-child{
+& .item-member:last-child{
     margin-right: 0px;
     }
 
-    .members .icon-members {
+    & .icon-members {
         display: flex;
     justify-content: center;
     align-items: center;}
-    
+}
 
     .item-member .icon-member{
         fill: #AFB1B8;
@@ -99,3 +95,8 @@ fill: #ffffff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.section-members{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}    

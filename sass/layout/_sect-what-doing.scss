@@ -1,8 +1,11 @@
-
+/* чим займаймося what-doing img */
 .list-imag__item {
     position: relative;
     /* margin-right:30px; */
 }
+
+
+
  .position {
     position: absolute;
     width: 100%;
@@ -31,12 +34,12 @@ color: #FFFFFF;
 .list-imag{
     display: flex;
     padding: 0px;
-}
 
- .list-imag .list-imag__item +.list-imag__item { 
+
+ & .list-imag__item +.list-imag__item { 
   margin-left: 30px;
 }
-
+}
 .section-title{
 font-weight: 700;
 font-size: 36px;
