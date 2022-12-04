@@ -51,7 +51,7 @@ margin-bottom: 30px;
         display: flex;
     }
     
-        .preference .items +.items{
+        .preference .preference__items +.preference__items{
             margin-left: 30px;
              /* background-color: tomato;  */
            }
@@ -66,7 +66,7 @@ margin-bottom: 30px;
     color: $title-tekst-color ;   
      }
     
-    .preference .text {
+    .preference .preference__text {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 14px;

@@ -1,5 +1,5 @@
 
-.item {
+.list-imag__item {
     position: relative;
     /* margin-right:30px; */
 }
@@ -33,7 +33,7 @@ color: #FFFFFF;
     padding: 0px;
 }
 
- .list-imag .item +.item { 
+ .list-imag .list-imag__item +.list-imag__item { 
   margin-left: 30px;
 }
 
