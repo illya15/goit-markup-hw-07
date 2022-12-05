@@ -89,26 +89,22 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
+  /* .site-nav .item + .item { */
+  /* margin-left: 50px; */
 }
-
-.site-nav .item:not(:last-child) {
+.site-nav .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* .site-nav .item + .item { */
-/* margin-left: 50px; */
-.site-nav.item {
+.site-nav .site-nav__item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
 }
-
 .site-nav .link.current {
   color: #2196F3;
 }
-
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -118,13 +114,11 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus {
   color: #2196F3;
 }
 
-.item {
+.site-nav__item {
   position: relative;
 }
 
@@ -156,17 +150,13 @@ body {
   display: flex;
   margin-left: 300px;
 }
-
-.mail-phone .item:not(:last-child) {
+.mail-phone .mail-phone__item:not(:last-child) {
   margin-right: 50px;
   color: #757575;
 }
-
-.mail-phone .link:hover,
-.mail-phone .link:focus {
+.mail-phone .link:hover, .mail-phone .link:focus {
   color: #2196F3;
 }
-
 .mail-phone .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,18 +168,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.icon-mail {
-  margin-right: 10px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mail-phone .link:hover .mail-phone__icon-mail {
+  fill: #2196F3;
 }
 
 /* .mail-phone .icon-mail { */
 /* fill: currentColor; */
 /* } */
-.mail-phone .link:hover .icon-mail {
-  fill: #2196F3;
+.mail-phone__icon-mail {
+  margin-right: 10px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* button */
@@ -247,7 +236,7 @@ body {
   background-color: #2F303A;
 }
 
-.hero-title {
+.hero__title {
   padding-top: 200px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -282,7 +271,7 @@ body {
   margin-left: 30px;
   /* background-color: tomato;  */
 }
-.preference .title {
+.preference .preference__title {
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -382,16 +371,16 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.members .item {
+.members .members__item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border: 1px solid #EEEEEE;
 }
-.members .item + .item {
+.members .members__item + .members__item {
   margin-left: 30px;
 }
-.members .title {
+.members .members__title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -401,7 +390,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.members .profetion-text {
+.members .members__profetion-text {
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 16px;
@@ -498,7 +487,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.clients .client-item {
+.clients .clients__item {
   width: 170px;
   height: 92px;
   background-color: #F5F5F5;
@@ -506,11 +495,11 @@ body {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
-.clients .client-item:last-child {
+.clients .clients__item:last-child {
   margin-right: 0px;
 }
 
-.client-item .client-link {
+.clients__item .client-link {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -523,7 +512,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-item .icon-client {
+.clients__item .icon-client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,12 +528,12 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-item .client-link:hover {
+.clients__item .client-link:hover {
   border: 1px solid #2196F3;
   cursor: pointer;
 }
 
-.client-item .client-link:hover .icon-client {
+.clients__item .client-link:hover .icon-client {
   fill: #2196F3;
 }
 
@@ -608,8 +597,6 @@ body {
 
 /* приєднатися */
 /* .addition { */
-/* margin-right: 640px;  */
-/* } */
 .add {
   /* margin-right: 868px;  */
   font-weight: 700;
@@ -619,28 +606,14 @@ body {
   color: #FFFFFF;
 }
 
-.addition-list {
+.add__addition-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   /* margin-bottom: 100px; */
   /* margin-left:  700px;    */
 }
-
-.addition-item {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  border-radius: 50%;
-  background-color: #3F404A;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.addition-item:hover {
-  background-color: #2196F3;
-}
-
-.addition-list .icon-add {
+.add__addition-list .icon-add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,6 +625,19 @@ body {
           align-items: center;
   margin: 12px;
   fill: #FFFFFF;
+}
+
+.add__addition-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #3F404A;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.add__addition-item:hover {
+  background-color: #2196F3;
 }
 
 /* підпишіться на розсилку */

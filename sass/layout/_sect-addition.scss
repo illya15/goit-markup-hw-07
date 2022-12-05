@@ -1,8 +1,7 @@
 
 /* приєднатися */
   /* .addition { */
-     /* margin-right: 640px;  */
-  /* } */
+  
   .add {
     /* margin-right: 868px;  */
    font-weight: 700;
@@ -12,13 +11,22 @@ letter-spacing: 0.03em;
 color: #FFFFFF
 }
 
-.addition-list{
+.add__addition-list{
    display: flex;
       /* margin-bottom: 100px; */
     /* margin-left:  700px;    */
 
+
+    & .icon-add{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px;
+      fill: #FFFFFF;
+   }
+  
 }
-.addition-item {
+.add__addition-item {
    width: 44px;
    height: 44px;
    margin-right:10px;
@@ -29,12 +37,5 @@ color: #FFFFFF
 &:hover {
    background-color: $accent-color;
 }
-}
-.addition-list .icon-add{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 12px;
-   fill: #FFFFFF;
 }
 
